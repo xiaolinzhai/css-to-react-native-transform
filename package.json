@@ -3,7 +3,7 @@
   "description": "Convert CSS text to a React Native stylesheet object,modify rem to pxToDp for personal use",
   "version": "1.9.2",
   "main": "dist/index.js",
-  "author": "alin_dg",
+  "author": "a2231232",
   "license": "MIT",
   "scripts": {
     "prettify": "prettier --write '**/*.@(js|json|md)'",
