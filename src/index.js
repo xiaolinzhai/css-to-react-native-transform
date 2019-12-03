@@ -11,8 +11,9 @@ import { allEqual } from "./utils/allEqual";
 import { camelCase } from "./utils/camelCase";
 import { sortRules } from "./utils/sortRules";
 import { values } from "./utils/values";
+import { dpToStr } from "./transforms/dp";
 
-const lengthRe = /^(0$|(?:[+-]?(?:\d*\.)?\d+(?:[Ee][+-]?\d+)?)(?=px|rem$))/;
+const lengthRe = /^(0$|(?:[+-]?(?:\d*\.)?\d+(?:[Ee][+-]?\d+)?)(?=px|rem|dp$))/;
 const viewportUnitRe = /^([+-]?[0-9.]+)(vh|vw|vmin|vmax)$/;
 const percentRe = /^([+-]?(?:\d*\.)?\d+(?:[Ee][+-]?\d+)?%)$/;
 const unsupportedUnitRe = /^([+-]?(?:\d*\.)?\d+(?:[Ee][+-]?\d+)?(ch|em|ex|cm|mm|in|pc|pt))$/;
@@ -29,8 +30,8 @@ const transformDecls = (styles, declarations, result) => {
     if (declaration.type !== "declaration") continue;
 
     const property = declaration.property;
-    const value = remToPx(declaration.value);
-
+    let value = remToPx(declaration.value);
+    value = dpToStr(value);
     const isLengthUnit = lengthRe.test(value);
     const isViewportUnit = viewportUnitRe.test(value);
     const isPercent = percentRe.test(value);

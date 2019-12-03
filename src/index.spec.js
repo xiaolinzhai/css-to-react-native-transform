@@ -4,13 +4,13 @@ describe("misc", () => {
   it("just test", () => {
     expect(
       transform(`.test {
-        lineHeight: 100rem;
+        lineHeight: 100dp;
         left: 0;
         right: 0;
         bottom: 0;
       }`),
     ).toEqual({
-      test: { lineHeight: "100rem", left: 0, right: 0, bottom: 0 },
+      test: { lineHeight: "pxToDp(100)", left: 0, right: 0, bottom: 0 },
     });
   });
 
