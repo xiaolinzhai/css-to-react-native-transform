@@ -1,9 +1,9 @@
 {
-  "name": "css-to-react-native-transform",
+  "name": "css-to-react-native-transform-alin",
   "description": "Convert CSS text to a React Native stylesheet object",
   "version": "1.9.0",
   "main": "dist/index.js",
-  "author": "Krister Kari",
+  "author": "alin_dg",
   "license": "MIT",
   "scripts": {
     "prettify": "prettier --write '**/*.@(js|json|md)'",
