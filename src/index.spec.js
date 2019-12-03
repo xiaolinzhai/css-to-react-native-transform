@@ -1,6 +1,19 @@
 import transform from "./index";
 
 describe("misc", () => {
+  it("just test", () => {
+    expect(
+      transform(`.test {
+        lineHeight: 100rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }`),
+    ).toEqual({
+      test: { lineHeight: "100rem", left: 0, right: 0, bottom: 0 },
+    });
+  });
+
   it("returns empty object when input is empty", () => {
     expect(transform(``)).toEqual({});
   });
