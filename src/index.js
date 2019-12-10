@@ -31,7 +31,7 @@ const transformDecls = (styles, declarations, result) => {
 
     const property = declaration.property;
     let value = remToPx(declaration.value);
-    value = dpToStr(value);
+    //value = dpToStr(value);
     const isLengthUnit = lengthRe.test(value);
     const isViewportUnit = viewportUnitRe.test(value);
     const isPercent = percentRe.test(value);
