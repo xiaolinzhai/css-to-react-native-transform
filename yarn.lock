@@ -1755,7 +1755,7 @@ css-mediaquery@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/css-mediaquery/-/css-mediaquery-0.1.2.tgz#6a2c37344928618631c54bd33cedd301da18bea0"
 
-css-to-react-native-alin@^2.3.2:
+css-to-react-native-alin@^3.1.0:
   version "3.1.0"
   resolved "https://registry.npmjs.org/css-to-react-native-alin/-/css-to-react-native-alin-3.1.0.tgz#8655966400ea19b7e06fdba2f8698eee8e13144f"
   integrity sha512-7Dp487fbDWSYI8R7KnTVjB6st9Z0ERaEnPakIX5auJ2pJRnwdIfCO4+CLAD9FJ4kYss/aSZPfLU9N4nCu8vSug==
