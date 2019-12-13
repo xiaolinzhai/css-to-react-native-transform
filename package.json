@@ -1,7 +1,7 @@
 {
   "name": "css-to-react-native-transform-alin",
   "description": "Convert CSS text to a React Native stylesheet object,modify rem to pxToDp for personal use",
-  "version": "1.9.3",
+  "version": "1.9.4",
   "main": "dist/index.js",
   "author": "a2231232",
   "license": "MIT",
@@ -59,7 +59,7 @@
   "dependencies": {
     "css": "^2.2.4",
     "css-mediaquery": "^0.1.2",
-    "css-to-react-native": "^2.3.2"
+    "css-to-react-native-alin": "^3.1.0"
   },
   "repository": {
     "type": "git",
