@@ -1981,23 +1981,14 @@ describe("font", () => {
     });
   });
 
-  it("allows line height as multiple", () => {
-    expect(
+  it("not allows line height as multiple", () => {
+    expect(() => {
       transform(`
       .test {
         font: 16px/1.5 "Helvetica";
       }
-    `),
-    ).toEqual({
-      test: {
-        fontFamily: "Helvetica",
-        fontSize: 16,
-        fontWeight: "normal",
-        fontStyle: "normal",
-        fontVariant: [],
-        lineHeight: 24,
-      },
-    });
+    `);
+    }).toThrowError('Failed to parse declaration "font: 16px/1.5 "Helvetica""');
   });
 
   it("transforms font without quotes", () => {
